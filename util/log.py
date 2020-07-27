@@ -1,10 +1,16 @@
 import logging
 import logging.handlers
 
+import os.path
+
+
+# import os.mkdir
 
 # Copied from https://stackoverflow.com/questions/37958568/how-to-implement-a-global-python-logger
 def init_logger(name, level: str):
     # logger settings
+    if not os.path.exists('./log'):
+        os.mkdir('./log')
     log_file = "log/bot.log"
     log_file_max_size = 1024 * 1024 * 20  # megabytes
     log_num_backups = 5
