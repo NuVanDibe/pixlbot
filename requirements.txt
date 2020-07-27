@@ -1,4 +1,4 @@
 discord.py
 sentry-sdk
-blitzdb
+blitzdb~=0.4.4
 pyyaml~=5.3.1

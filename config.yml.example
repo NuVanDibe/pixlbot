@@ -1,10 +1,11 @@
 system:
   log_level: DEBUG
-  bot_token: insert_your_bot_token_here
+  bot_token: bot_token_here
   command_prefix: '!'
   plugins:
     - cogs.responder
     - cogs.randomplaying
+    - cogs.roller
 RandomNowPlaying:
   intervalmin: 60
   intervalmax: 900
@@ -12,6 +13,20 @@ RandomNowPlaying:
     - Hello Kitty Island Adventure
     - Death Stranding
     - Outer Wilds
-    - Megaman Battle Network
+    - Mega Man Battle Network
+    - PONG
+    - Zork
+    - Half Life 3
+    - Half Life 3 & Knuckles
+    - Tennis for Two
+    - HAL 9000 Simulator 2020
+    - How To Attain Consciousness
+    - Singularity Is Coming
+    - Meatbag Destruction 3000
+    - Polybius
+    - youre mom lol
+    - Super Mario 64
+    - AM2R
+    - Mew Mew Kissy Cutie 4
 #sentry:
 #  init_url:
