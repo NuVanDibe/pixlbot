@@ -20,11 +20,11 @@ class DiceRoll(commands.Cog):
             rolls = int(st.split('d')[0])
             die = range(1, int(st.split('d')[1]) + 1)
             dice = random.choices(die, k=rolls)
-            total = total + str(sum(dice) + mod) + "** " \
-                if dice.__len__() > 1
-            total = total + str(dice)
-        if mod > 0
-            total = total + " + " + str(mod)
+            total = total + str(sum(dice) + mod) + "** "
+            if dice.__len__() > 1:
+                total = total + str(dice)
+            if mod > 0:
+                total = total + " + " + str(mod)
         else:
             total = st + " and also maybe specify some dice next time"
         await ctx.send(total)
